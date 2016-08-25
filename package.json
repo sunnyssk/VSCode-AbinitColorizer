@@ -1,0 +1,37 @@
+{
+    "name": "abinit",
+    "displayName": "abinit",
+    "description": "Syntax colorization for Abinit files.",
+    "version": "0.1.0",
+    "publisher": "TYZ",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "abi",
+            "aliases": ["Abinit-Input"],
+            "extensions": [".abi"],
+            "configuration": "./abi.configuration.json"
+        },
+        {
+            "id": "abo",
+            "aliases": ["Abinit-Output"],
+            "extensions": [".abo",".ablog"],
+            "configuration": "./abo.configuration.json"
+        }],
+        "grammars": [{
+            "language": "abi",
+            "scopeName": "text.abi",
+            "path": "./syntaxes/abi.tmLanguage"
+        },
+        {
+            "language": "abo",
+            "scopeName": "text.abo",
+            "path": "./syntaxes/abo.tmLanguage"
+        }]
+    }
+}
