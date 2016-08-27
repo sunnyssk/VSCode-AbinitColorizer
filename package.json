@@ -4,6 +4,7 @@
     "description": "Syntax colorization for Abinit files.",
     "version": "0.1.0",
     "publisher": "TYZ",
+    "icon":"images/logo.png",
     "engines": {
         "vscode": "^1.0.0"
     },
